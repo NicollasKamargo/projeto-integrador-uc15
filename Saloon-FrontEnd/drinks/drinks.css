@@ -1,0 +1,258 @@
+/* Cardápio Bebidas Specific Styles */
+
+.cardapio-ingredientes {
+  padding: 28px 85px 40px 85px;
+  box-sizing: border-box;
+  font-family: "Faustina", serif;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  .cardapio-ingredientes {
+    padding: 20px 40px 30px 40px;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+  .cardapio-ingredientes {
+    padding: 15px 20px 25px 20px;
+  }
+  
+  .linha-menu {
+    justify-content: center;
+    gap: 20px;
+    row-gap: 40px;
+  }
+  
+  .titulo-secao-menu {
+    font-size: 24px;
+  }
+}
+
+.container-cardapio {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
+
+.linha-menu {
+  display: flex;
+  gap: 28px;
+  row-gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cartao-produto {
+  position: relative;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cartao-produto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+figure.cartao-produto {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+}
+
+.imagem-produto {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.icone-adicionar {
+  position: absolute;
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 2;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.icone-adicionar:hover {
+  transform: translateX(-50%) scale(1.2);
+  filter: brightness(1.2);
+}
+
+.icone-adicionar:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+.rotulo-produto {
+  font-size: 18px;
+  color: #eb3223;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-secao-menu {
+  font-family: "Sancreek", cursive;
+  font-size: 28px;
+  color: #000000;
+  margin: 6px 0 12px 0;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Bebidas Specific Styles */
+.cartao-bebida {
+  min-height: 320px;
+}
+
+.rotulo-bebida {
+  color: #daa547;
+  font-family: "Faustina", serif;
+  font-weight: 700;
+}
+
+.opcoes-bebida {
+  font-size: 16px;
+  color: #eb3223;
+  font-family: "Faustina", serif;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  margin-top: 4px;
+  min-height: 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.opcao-radio {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.opcao-radio input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #eb3223;
+}
+
+.opcao-radio span {
+  font-size: 16px;
+  color: #eb3223;
+  font-family: "Faustina", serif;
+  font-weight: 400;
+}
+
+.preco-bebida {
+  font-size: 18px;
+  color: #eb3223;
+  font-family: "Faustina", serif;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.acoes-cardapio {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0 80px 0;
+}
+
+.item-acao {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease;
+}
+
+.item-acao:hover {
+  transform: translateY(-2px);
+}
+
+.icone-acao {
+  width: 28px;
+  height: 28px;
+  display: block;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.item-acao:hover .icone-acao {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.link-acao {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  margin: 0;
+  color: #eb3223;
+  font-family: "Faustina", serif;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+  border-radius: 4px;
+}
+
+.link-acao:hover {
+  color: #c72a1e;
+  background-color: rgba(235, 50, 35, 0.1);
+}
+
+.link-acao:active {
+  transform: scale(0.95);
+}
+
+.link-cancelar {
+  color: #eb3223;
+}
+
+@media (max-width: 880px) {
+  .cartao-produto {
+    width: 140px;
+  }
+}
+
+@media (max-width: 520px) {
+  .acoes-cardapio {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+
