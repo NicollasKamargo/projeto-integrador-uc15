@@ -1,0 +1,27 @@
+:root {
+    --bg-body: #ffedd2;
+    --text-main: #eb3223;
+    --text-contrast: #ffedd2;
+    --header-bg: #9b3531;
+    --header-text: #daa547;
+    --secondary-text: #eb3223;
+    --timeline-bg: #eb3223;
+    --timeline-progress: #e69248;
+    --timeline-complete: #4caf50;
+    --footer-bg: #9b3531;
+    --footer-text: #daa547;
+    --footer-card-bg: #daa547;
+    --footer-card-text: #9b3531;
+    --button-bg: #eb3223;
+    --button-text: #daa547;
+    --button-hover: #c72a1e;
+    --title-size: 48px;
+    --title-family: "Sancreek", serif;
+    --body-size: 16px;
+    --body-family: "Faustina", serif;
+    --title-color: #000000;
+    --border-color: #000000;
+    --input-bg: #ffffff;
+    --shadow-soft: rgba(0, 0, 0, 0.18);
+    --shadow-strong: rgba(0, 0, 0, 0.22);
+}
