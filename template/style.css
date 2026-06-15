@@ -32,6 +32,14 @@
   --shadow-strong: rgba(0, 0, 0, 0.22);
 }
 
+/* General Elements ------------------- */
+html,
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
 /* Body------------------ */
 body {
     background-color:var(--bg-body);
