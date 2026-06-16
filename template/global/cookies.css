@@ -1,0 +1,38 @@
+
+@import "./global/variables.css";
+ .cookie-banner {
+    display: flex; 
+    justify-content: center;;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--border-color);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 9999;
+} */
+
+.cookie-conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#aceitar-cookies {
+    display: flex;
+    background-color: #28a745;
+    color: #fff;
+    /* border: none; */
+    /* padding: 10px 20px; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#aceitar-cookies:hover {
+    background-color: #218838;
+} 
