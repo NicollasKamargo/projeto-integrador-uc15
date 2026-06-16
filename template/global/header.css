@@ -1,6 +1,6 @@
 @import "./variables.css";
 
-header{
+header {
   position: relative;
   display: flex;
   justify-content: space-between;
