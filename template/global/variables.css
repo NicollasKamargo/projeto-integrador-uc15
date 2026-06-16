@@ -16,17 +16,20 @@
     --button-text: #daa547;
     --button-hover: #c72a1e;
     --title-family: "Sancreek", serif;
-    --body-size: 16px;
+    /* --body-size: 16px; */
     --body-family: "Faustina", serif;
-    --title-color: #000000;
-    --border-color: #000000;
+    --title-color: #232323;
+    --border-color: #232323;
     --input-bg: #ffffff;
     --shadow-soft: rgba(0, 0, 0, 0.18);
     --shadow-strong: rgba(0, 0, 0, 0.22);
-    --size-large: 16px;
-    --size-medium: 12px;
-    --size-small: 8px;
-    --title-large: 48px;
-    --title-medium: 40px;
-    --title-small: 32px;
+    --body-size-large: 24px;
+    --body-size-medium: 18px;
+    --body-size-small: 12px;
+    --title-size-large: 48px;
+    --title-size-medium: 40px;
+    --title-size-small: 32px;
+    --spacing-md: 16px;
+    --spacing-xl: 32px;
+    --standard-width: 1144px;
 }
